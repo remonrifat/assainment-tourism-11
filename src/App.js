@@ -16,6 +16,7 @@ import Navigation from "./Components/Navigation/Navigation";
 import AuthProvider from "./Contexts/AuthProvider";
 import Signup from "./Components/Register/Signup";
 
+
 function App() {
   return (
     <div className="appp">
@@ -38,6 +39,7 @@ function App() {
             <Route to="/Register">
               <Signup />
             </Route>
+
           </Switch>
         </Router>
       </AuthProvider>
