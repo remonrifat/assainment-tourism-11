@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+
 import About from '../About/About';
 import Footer from '../Footer/Footer';
 import Services from '../Services/Services';
@@ -6,19 +6,13 @@ import './Home.css';
 import bannerImage from './images/img-1.jpg'
 
 
-const Home = () => {
-    const [users, setUsers] = useState([]);
-    useEffect(() => {
-        fetch("/src/Component/Services/serviceData.js")
-            .then((res) => res.json())
-            .then((data) => setUsers(data));
-    }, []);
-    const bannerText = {
-        color: "white",
-        fontSize: "4em",
-    }
-    return (
 
+const bannerText = {
+    color: "white",
+    fontSize: "4em",
+}
+const Home = () => {
+    return (
         <div class="">
             <div className="bannerDoc  ">
                 <div className="container d-flex justify-content-start align-items-center h-100 ">
